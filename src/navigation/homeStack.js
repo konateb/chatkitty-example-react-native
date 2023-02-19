@@ -27,7 +27,7 @@ function ChatComponent() {
     <ChatStack.Navigator
       screenOptions={{
         headerStyle: {
-          backgroundColor: '#5b3a70',
+          backgroundColor: '#5b0',
         },
         headerTintColor: '#ffffff',
         headerTitleStyle: {
