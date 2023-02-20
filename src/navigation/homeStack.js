@@ -27,9 +27,9 @@ function ChatComponent() {
     <ChatStack.Navigator
       screenOptions={{
         headerStyle: {
-          backgroundColor: '#5b0',
+          backgroundColor: "#5b3a70",
         },
-        headerTintColor: '#ffffff',
+        headerTintColor: "#ffffff",
         headerTitleStyle: {
           fontSize: 22,
         },
@@ -44,25 +44,25 @@ function ChatComponent() {
               icon="plus"
               size={28}
               iconColor="#ffffff"
-              onPress={() => navigation.navigate('BrowseChannels')}
+              onPress={() => navigation.navigate("BrowseChannels")}
             />
           ),
         })}
       />
-       <ChatStack.Screen
-            name="BrowseChannels"
-            component={BrowseChannelsScreen}
-            options={({ navigation }) => ({
-              headerRight: () => (
-                  <IconButton
-                      icon="plus"
-                      size={28}
-                      iconColor="#ffffff"
-                      onPress={() => navigation.navigate('CreateChannel')}
-                  />
-              ),
-            })}
-        />
+      <ChatStack.Screen
+        name="BrowseChannels"
+        component={BrowseChannelsScreen}
+        options={({ navigation }) => ({
+          headerRight: () => (
+            <IconButton
+              icon="plus"
+              size={28}
+              iconColor="#ffffff"
+              onPress={() => navigation.navigate("CreateChannel")}
+            />
+          ),
+        })}
+      />
 
       <ChatStack.Screen
         name="Chat"
